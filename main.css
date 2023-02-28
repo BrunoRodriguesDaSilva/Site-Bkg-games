@@ -1,11 +1,9 @@
-/*Estilo 1 - Reset do estilo da pagina*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*Estilo 2 - Estilização do header e mudanca de local da li */
 header {
     padding: 16px 0;
     background-color: #182c61;
@@ -18,8 +16,6 @@ section h3,
 form button {
     font-family: 'Bungee', cursive;
     font-weight: normal;
-
-
 }
 
 body,input,textarea {
@@ -37,14 +33,17 @@ header nav li a {
     text-decoration: none;
 }
 
-/*Estilo 3 - Estilização do container, centralizando-o */
+header li:hover {
+    border-bottom: solid 4px rgb(255, 255, 255);
+}
+
+
 .container {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
 }
 
-/*Estilo 4 - Sobescreve o css do container dentro do header para mudar o titulo e o menu */
 header .container,
 section .container {
     display: flex;
@@ -52,7 +51,17 @@ section .container {
     justify-content: space-between;
 }
 
-/*Estilo 5 - Estilização das logos*/
+#about {
+    padding: 200px 0;
+    height: 800px;
+}
+
+#about h2 {
+    height: 60px;
+    width: 200px;
+    border-bottom: solid 5px black;
+}
+
 .brands-list img{
     height: 24px;
 }
@@ -62,28 +71,23 @@ section .container {
     margin-right: 8px;
 }
 
-/*Estilo 6 - Estilização dos elementos da section*/
 section .container {
     align-items: flex-start;
 }
 
 section {
     padding: 24px 0;
+    color: #182c61;
 }
 
 section h2 {
     margin-bottom: 16px;
 }
 
-section {
-    color: #182c61;
-}
-
 section p {
     margin-bottom: 8px;
 }
 
-/*Estilo 7 - Aplica margem a direita da imagem*/
 .store-front {
     margin-right: 32px;
     height: 487px;
@@ -103,10 +107,18 @@ section p {
  text-decoration: none;
 }
 
-/*Estilo 8 - Estilização da area de contato*/
-
 #contact .container {
     display: block;
+}
+
+#contact {
+    margin: 120px;
+}
+
+#contact h2 {
+    width: 140px;
+    margin-bottom: 100px;
+    border-bottom: solid 4px black;
 }
 
 .contact-methods {
